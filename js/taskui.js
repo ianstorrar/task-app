@@ -18,7 +18,7 @@ $( document ).on( "mobileinit", function () {
             '<a href="#">',
             '<h2>', task.name, '</h2>',
             '<p>', task.details, '</p>',
-			'<p>', task.priority, '</p>',
+			'<p> Priority: ', task.priority, '</p>',
             '</a>',
             '<a href="#">',
             'Show',
