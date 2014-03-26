@@ -121,6 +121,7 @@ $( document ).on( "mobileinit", function () {
 
         item.name = $('#task-name').val().trim();
 				item.details = $('#task-details').val().trim();
+						item.priority = $('#task-priority').val().trim();
 
         $( "#add-task" ).popup("close");
         if (item.name === '') {
@@ -132,6 +133,7 @@ $( document ).on( "mobileinit", function () {
           task = taskList.get(taskId);
   		    $( '#task-name' ).val('');
   		    $( '#task-details' ).val('');
+			$( '#task-priority' ).val('');
           displayTask(task);
           $('#tasks-list').listview("refresh");
         }
