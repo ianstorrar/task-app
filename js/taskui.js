@@ -231,6 +231,10 @@ $( document ).on( "mobileinit", function () {
     $("#add-task-add").on("click", createTask);
   });
   
+  // add sortable functionality to task list
+  $( document ).ready( function () {
+    $ ( '#lists-list' ).sortable();
+  });
    
   // reset the task list every time the tasks page is to be shown
   $( document ).on("pagebeforeshow", "#tasks-page", function (event) {
