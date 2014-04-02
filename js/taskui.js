@@ -233,9 +233,14 @@ $( document ).on( "mobileinit", function () {
   
   // add sortable functionality to task list
   $( document ).ready( function () {
-    $ ( '#lists-list' ).sortable();
+    $( '#lists-list' ).sortable({
+      update: function( event, ui ) {
+        var sorted = $( this ).sortable( "serialize", { key: "sort" } );
+        localStorage['sorted'] = sorted ;
+      }
+	});
   });
-   
+  
   // reset the task list every time the tasks page is to be shown
   $( document ).on("pagebeforeshow", "#tasks-page", function (event) {
     $('#tasks-list').empty();
