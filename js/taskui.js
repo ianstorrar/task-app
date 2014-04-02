@@ -231,6 +231,7 @@ $( document ).on( "mobileinit", function () {
     $("#add-task-add").on("click", createTask);
   });
   
+   
   // reset the task list every time the tasks page is to be shown
   $( document ).on("pagebeforeshow", "#tasks-page", function (event) {
     $('#tasks-list').empty();
