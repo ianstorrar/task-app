@@ -102,11 +102,19 @@
   				</div>
   			</form>
   		</aside>
+		
+		<aside data-role="popup" id="options" data-theme="a" class="ui-corner-all">
+			<form>
+				<div style="padding:10px 20px;">
+					<a href='#' id="hide-complete-tasks" class="ui-btn ui-corner-all ui-btn-b">Hide completed tasks</a>
+				</div>
+			</form>
+		</aside>
 
       <footer data-role="footer" data-position="fixed">
         <div data-role="navbar" data-iconpos="top" class="ui-body ui-body-b">
           <ul  data-inset="false">
-            <li><a data-icon="gear" href="#">Options</a></li>
+            <li><a data-icon="gear" href="#options" data-rel="popup">Options</a></li>
             <li><a data-icon="location" href="#">Nearby</a></li>
             <li><a data-icon="search" href="#">Search</a></li>
           </ul>
